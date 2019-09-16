@@ -3,6 +3,22 @@
 A high-productivity web framework for the [Go language](http://www.golang.org/).
 
 
+### commands i ran so far
+
+#### create new app
+    revel new -a github.com/najamsk/revelplay/pink
+
+#### package revel app
+    GO_ENABLED=0 revel package -m prod
+
+#### build docker image
+    docker build -t pink/revel:latest . 
+
+#### run docker image
+    docker run -i -t pink/revel:latest -p 9000:9000                      
+
+
+
 ### Start the web server:
 
    revel run myapp
