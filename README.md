@@ -1,6 +1,6 @@
 Build revel package (.tar.gz):
 
-    CGO_ENABLED=0 revel package github.com/najamsk/pink -s
+    CGO_ENABLED=0 revel package github.com/najamsk/revelplay/pink -s
 
 Build docker image:
 
@@ -17,6 +17,7 @@ Run:
 
 #### package revel app
     GO_ENABLED=0 revel package -m prod
+    
 
 #### build docker image
     docker build -t pink/revel:latest .
