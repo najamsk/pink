@@ -1,3 +1,6 @@
-test-results/
-tmp/
-routes/
+/app/tmp/
+/app/routes/
+/test-results/
+/pink
+/pink.tar.gz
+/src

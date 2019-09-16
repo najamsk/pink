@@ -1,7 +1,14 @@
-# Welcome to Revel
+Build revel package (.tar.gz):
 
-A high-productivity web framework for the [Go language](http://www.golang.org/).
+    CGO_ENABLED=0 revel package github.com/najamsk/pink -s
 
+Build docker image:
+
+    docker build -t pink .
+
+Run:
+
+    docker run --rm -it --name pink -p 9000:9000 pink
 
 ### commands i ran so far
 
@@ -12,48 +19,9 @@ A high-productivity web framework for the [Go language](http://www.golang.org/).
     GO_ENABLED=0 revel package -m prod
 
 #### build docker image
-    docker build -t pink/revel:latest . 
+    docker build -t pink/revel:latest .
 
 #### run docker image
-    docker run -i -t pink/revel:latest -p 9000:9000                      
-
-
+    docker run -i -t pink/revel:latest -p 9000:9000
 
 ### Start the web server:
-
-   revel run myapp
-
-### Go to http://localhost:9000/ and you'll see:
-
-    "It works"
-
-## Code Layout
-
-The directory structure of a generated Revel application:
-
-    conf/             Configuration directory
-        app.conf      Main app configuration file
-        routes        Routes definition file
-
-    app/              App sources
-        init.go       Interceptor registration
-        controllers/  App controllers go here
-        views/        Templates directory
-
-    messages/         Message files
-
-    public/           Public static assets
-        css/          CSS files
-        js/           Javascript files
-        images/       Image files
-
-    tests/            Test suites
-
-
-## Help
-
-* The [Getting Started with Revel](http://revel.github.io/tutorial/gettingstarted.html).
-* The [Revel guides](http://revel.github.io/manual/index.html).
-* The [Revel sample apps](http://revel.github.io/examples/index.html).
-* The [API documentation](https://godoc.org/github.com/revel/revel).
-
