@@ -10,6 +10,7 @@ A high-productivity web framework for the [Go language](http://www.golang.org/).
 
 #### package revel app
     GO_ENABLED=0 revel package -m prod
+    GO_ENABLED=0 revel package github.com/najamsk/revelplay/pink -m prod -s
 
 #### build docker image
     docker build -t pink/revel:latest . 

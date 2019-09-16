@@ -7,4 +7,4 @@ ADD pink.tar.gz /opt
 # whatever port
 EXPOSE 9000
 # I looked inside run.sh for this
-CMD ["/opt/pink", "-importPath", "pink", "-srcPath", "/opt/src", "-runMode", "prod"]
+CMD ["/opt/pink", "-importPath", "github.com/najamsk/revelplay/pink", "-srcPath", "/opt/src", "-runMode", "prod"]
