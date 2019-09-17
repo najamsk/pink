@@ -1,6 +1,8 @@
 Build revel package (.tar.gz):
 
     CGO_ENABLED=0 revel package github.com/najamsk/revelplay/pink -s
+    following also work exluding -s
+    CGO_ENABLED=0 revel package github.com/najamsk/revelplay/pink -s
 
 Build docker image:
 
