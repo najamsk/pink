@@ -5,12 +5,13 @@ Build revel package (.tar.gz):
     CGO_ENABLED=0 revel package github.com/najamsk/revelplay/pink
 
 Build docker image:
-
-    docker build -t pink .
+	docker build -t pink .
 
 Run:
+	docker run --rm -it --name pink -p 9000:9000 pink
 
-    docker run --rm -it --name pink -p 9000:9000 pink
+ssh into docker container:
+	docker exec -u root -it pink sh
 
 ### commands i ran so far
 
@@ -26,5 +27,9 @@ Run:
 
 #### run docker image
     docker run -i -t pink/revel:latest -p 9000:9000
+
+#### ssh into docker container
+    
+
 
 ### Start the web server:
